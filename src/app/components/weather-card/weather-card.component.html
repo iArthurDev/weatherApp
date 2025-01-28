@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="cityInfo-container">
+    <label for="">{{ weatherData.name }}, {{ weatherData.sys.country }}</label>
+  </div>
+  <div class="weatherInfo-container">
+    <label for="">Temperature: {{ weatherData.main.temp }}</label>
+    <label for="">Latitude: {{ weatherData.coord.lat }}</label>
+    <label for="">Longitude: {{ weatherData.coord.lon }}</label>
+    <label for="">Humidity: {{ weatherData.main.humidity }}</label>
+    <label for="">Pressure: {{ weatherData.main.pressure }}</label>
+    <label for="">Description: {{ weatherData.weather[0].description }}</label>
+  </div>
+  <!--<button class="buttonSendInfo" (click)="goToData()">Send Data</button>-->
+</div>
